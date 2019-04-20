@@ -43,6 +43,7 @@ var arr = [
     { count: 0, name: "Slideshows" },
     { count: 0, name: "Quizzes with Slideshows" },
     { count: 0, name: "Employment" },
+    { count: 0, name: "Gambling" },
     { count: 0, name: "Others" }
 ];
 
