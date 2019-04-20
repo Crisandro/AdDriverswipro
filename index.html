@@ -1,15 +1,59 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
+    <head>
+        <title>Ad drivers</title>
+        <meta charset="UTF-8" />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <!--<img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+                Team Revalicious
+            </a>
+        </nav>
+        <img class="_46-i img" id="srt"
+        src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.0-0/s180x540/47086410_337443097055986_9198533553787240448_n.png?_nc_cat=105&amp;_nc_ht=scontent.fmnl4-2.fna&amp;oh=8dba1989fe4dbe824d8e9e13a11cb2d5&amp;oe=5D3BDDEE" alt="SRT" width="180" height="85">
+        
+        <div id="container">
+            <div class="form-group">
+                <input type="text" placeholder="name" id="name" class="no-border"/> 
+            </div>
 
-  <body>
-    <div id="app"></div>
+            <hr class="line">
 
-    <script src="src/index.js"></script>
-  </body>
+            <div class="form-group row">
+                <select id="select1" class="selects form-control my-1 mr-sm-3 col-sm">
+                    <option>***Select</option>
+                </select>
+                <select id="select2" class="selects form-control my-1 mr-sm-3 col-sm">
+                    <option>***Select</option>
+                </select>
+                <select id="select3" class="selects form-control my-1 mr-sm-3 col-sm">
+                    <option>***Select</option>
+                </select>
+                <button id="submit" class="custom-button col-sm">
+                    Submit
+                </button>
+            </div>
+
+        </div>
+        <div id="fullcontainer">
+            <div id="scrolling">
+                <div id="results"></div>
+            </div>
+        </div>
+        <div id="contents">
+            
+        </div>
+        <div id="topresults"></div>
+    </body>
+    <script src="script/script.js"></script>
 </html>
