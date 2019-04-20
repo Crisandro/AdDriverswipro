@@ -43,7 +43,6 @@ var arr = [
     { count: 0, name: "Slideshows" },
     { count: 0, name: "Quizzes with Slideshows" },
     { count: 0, name: "Employment" },
-    { count: 0, name: "Gambling" },
     { count: 0, name: "Others" }
 ];
 
@@ -170,10 +169,17 @@ function counterout() {
     resultsall = document.getElementById("topresults");
     $("#countperson").remove();
     
-    counterdisplay = document.createElement("div");
-    counterdisplay.innerHTML = "<img src='https://cdn.onlinewebfonts.com/svg/img_38228.png' height='20px'>  No. of Entries: " + counter;
-    counterdisplay.setAttribute("id", "countperson");
-    resultsall.appendChild(counterdisplay);
+    if(counter == 0){
+        counterdisplay = document.createElement("div");
+        counterdisplay.innerHTML = "CAMOTES !!!!";
+        counterdisplay.setAttribute("id", "countperson");
+        resultsall.appendChild(counterdisplay);
+    }else{
+        counterdisplay = document.createElement("div");
+        counterdisplay.innerHTML = "<img src='https://cdn.onlinewebfonts.com/svg/img_38228.png' height='20px'>  No. of Entries: " + counter;
+        counterdisplay.setAttribute("id", "countperson");
+        resultsall.appendChild(counterdisplay);
+    }
 }
 
 
@@ -203,13 +209,24 @@ function maketable() {
 
 function topads() {
     var count = 0;
-    var titledone = document.getElementsByClassName("topads")[0];
-    for (var i = resultstable.length - 1; i >= resultstable.length - 3; i--) {
+    var first = resultstable.length-1;
+    if( resultstable[first].count == 0){
+        var titledone = document.getElementsByClassName("topads")[0];
         var add = document.createElement("div");
-        add.innerHTML = count + 1 + ". " + resultstable[i].name;
+        add.innerHTML = "1. TINGBITS</br>2. NA </br>3.JUD!";
         titledone.appendChild(add);
-        count++;
     }
+    else{
+        var titledone = document.getElementsByClassName("topads")[0];
+        for (var i = resultstable.length - 1; i >= resultstable.length - 3; i--) {
+            var add = document.createElement("div");
+            add.innerHTML = count + 1 + ". " + resultstable[i].name;
+            titledone.appendChild(add);
+            count++;
+        }
+    }
+    
+    
 }
 
 
