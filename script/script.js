@@ -13,6 +13,7 @@ var counter = 0;
 var countsaresults = 0;
 var flag = 0;
 var arr = [
+    { count: 0, name: "SFA" },
     { count: 0, name: "Weight Loss Products" },
     { count: 0, name: "Weight Loss Programs/Training" },
     { count: 0, name: "Supplement Products" },
@@ -43,6 +44,7 @@ var arr = [
     { count: 0, name: "Slideshows" },
     { count: 0, name: "Quizzes with Slideshows" },
     { count: 0, name: "Employment" },
+    { count: 0, name: "Gambling" },
     { count: 0, name: "Others" }
 ];
 
